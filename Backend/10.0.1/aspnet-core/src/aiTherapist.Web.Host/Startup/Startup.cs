@@ -5,6 +5,7 @@ using Abp.Castle.Logging.Log4Net;
 using Abp.Extensions;
 using aiTherapist.Configuration;
 using aiTherapist.Identity;
+using aiTherapist.Services;
 using Castle.Facilities.Logging;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -47,6 +48,7 @@ namespace aiTherapist.Web.Host.Startup
             AuthConfigurer.Configure(services, _appConfiguration);
 
             services.AddSignalR();
+            services.AddTransient<ElevenLabsService, ElevenLabsService>();
 
             // Configure CORS for angular2 UI
             services.AddCors(
