@@ -11,7 +11,7 @@ namespace aiTherapist.Services
     public class IAiTherapistService
     {
         private readonly HttpClient _httpClient;
-        private readonly string _openAiApiKey = "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"
+        private readonly string _openAiApiKey = "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";
         public IAiTherapistService(HttpClient httpClient, string openAiApiKey)
         {
             _httpClient = httpClient;

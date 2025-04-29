@@ -21,7 +21,6 @@ namespace aiTherapist.Web.Host.Controllers
             var audioBytes = await _aiTherapistService.GetSpeechFromTextAsync(request.Text);
             return File(audioBytes, "audio/mpeg");
         }
-
         public class SpeakRequestDto
         {
             public string Text { get; set; }
