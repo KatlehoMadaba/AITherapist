@@ -33,7 +33,7 @@ export default function Therapist() {
         onClick={handleSubmit}
         className="bg-blue-500 text-white py-2 px-6 rounded-md"
       >
-        Speak to me i am always here 
+        Speak to me i am always here working hard
       </button>
 
       {audioUrl && (
